@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musico</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu"><img src="musico.png"></div>
+        <div class="menu"><input type="text" placeholder="Поиск"></div>
+        <div class="menu"><a href="index.html">Главная</a></div>
+        <div class="menu"><a href="исполнители.html">Исполнители</a></div>
+        <div class="menu"><a href="щ нас.html">О нас</a></div>
+        
+    </header>
+    <main>
+        <div class="container2">
+            <div class="vse_ispol">
+                <div class="ispol">Все исполнители</div>
+                <div class="spisok_ispol">
+                    <div class="gruppa"><a href="#Beatles">The Beatles</a></div>
+                    <div class="gruppa"><a href="#Queen">Queen</a></div>
+                    <div class="gruppa"><a href="#Metallica">Metallica</a></div>
+                    <div class="gruppa"></div>
+                    
+                </div>
+
+            </div>
+            
+            <button class="box" onclick="open(0)">
+                <div class="ispol" id="Beatles">The Beatles</div>
+                <div class="ispol_img"><img src="beatles_img.jpg"></div>
+            </div>
+            <div class="albums">
+                <div class="album"><img src="The_Beatles_-_Please_Please_Me.jpg">Please Please Me</div>
+                <div class="album"><img src="The_Beatles_-_A_Hard_Day's_Night.jpg">A Hard Day's Night</div>
+                <div class="album"><img src="The_Beatles_-_Beatles_for_Sale.jpeg">Beatles For Sale</div>
+                <div class="album"><img src="The_Beatles_-_Help!.jpg" alt="" sizes="" srcset="">Help!</div>
+                <div class="album"><img src="The_Beatles_-_Revolver.jpg" alt="" srcset="">Revolver</div>
+                <div class="album"><img src="The_Beatles_-_Rubber_Soul.jpg" alt="">Rubber Soul</div>
+                <div class="album"><img src="The_Beatles_-_Sgt._Pepper's_Lonely_Hearts_Club_Band.jpg" alt="">Sgt. Pepper's Lonely Hearts Club Band</div>
+                <div class="album"><img src="The_Beatles_-_With_the_Beatles.jpg" alt="">With The Beatles</div>
+                <div class="album"><img src="TheBeatles68LP.jpg" alt="">The Beatles 68 LP</div>
+            </div>
+            <div class="box" onclick="open(1)">
+                <div class="ispol" id="Queen">Queen</div>
+                <div class="ispol_img"><img src="queen_img.jpg"></div>
+            </div>
+            <div class="albums">
+                <div class="album"><img src='Queen (1).png'>Queen</div>
+                <div class="album"><img src='Queen 2 (2).png'>Queen II</div>
+                <div class="album"><img src='Sheer_Heart_Attack (3).jpg'>Sheer Heart Attack</div>
+                <div class="album"><img src='A_Night_At_The_Opera(4).jpg'>A Night At The Opera</div>
+                <div class="album"><img src='A_Day_at_the_Races (5).jpg'>A Day At The Races</div>
+                <div class="album"><img src="News_of_the_World (6).jpg">News Of The World</div>
+                <div class="album"><img src='Jazz (7).jpg'>Jazz</div>
+                <div class="album"><img src='The_Game(8).jpg'>The Game</div>
+                <div class="album"><img src='Flash_Gordon (29).jpg'>Flash Gordon</div>
+                <div class="album"><img src="Hot_Space(10).jpg">Hot Space</div>
+                <div class="album"><img src="The_Works (11).jpg">The Works</div>
+                <div class="album"><img src="A Kind of Magic (12).jpg">A Kind Of Magic</div>
+                <div class="album"><img src="The Miracle (13).jpg">The Miracle</div>
+                <div class="album"><img src="Innuendo(14).jpg">Innuendo</div>
+                <div class="album"><img src="Queen_Made_In_Heaven (15).jpg">Made In Heaven</div>
+            </div>
+            <div class="box" onclick="open(2)">
+                <div class="ispol" id="Metallica">Metallica</div>
+                <div class="ispol_img"><img src="metallica_img.jpg"></div>               
+            </div>
+            <div class="albums">
+                <div class="album"><img src='Kill Em All (1).jpg'>Kill 'Em All</div>
+                <div class="album"><img src='411px-Ride_the_Lightning.jpg'>Ride The Lightning</div>
+                <div class="album"><img src='Master Of Puppets.jpg'>Master Of Puppets</div>
+                <div class="album"><img src='411px-And_Justice_For_All.jpg'>...And Justice For All</div>
+                <div class="album"><img src='411px-Metallica_Album.jpg'>Metallica</div>
+                <div class="album"><img src='Metallica_Load_Hi-Res.jpg'>Load</div>
+                <div class="album"><img src='Metallica_Reload.jpg'>ReLoad</div>
+                <div class="album"><img src='411px-St.Anger_cover.jpg'>St. Anger</div>
+                <div class="album"><img src='411px-Metallica_Death_Magnetic.jpg'>Death Magnetic</div>
+                <div class="album"><img src='Hardwired...To Self-Destruct.jpeg'>Hardwired...To Self-Destruct</div>
+            </div>
+        </div>       
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>

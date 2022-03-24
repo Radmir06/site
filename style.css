@@ -1,0 +1,266 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+header {
+    display: flex;
+    height: 76px;
+    align-items: center;
+    background-color: #171717;
+}
+main {
+    
+    background-color: black;
+}
+.container {
+    width:80%;
+    display: flex;
+    margin: 0 auto;
+    background-color: #171717;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.container2 {
+    width:80%;
+    display: flex;
+    margin: 0 auto;
+    background-color: #171717;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.menu img { 
+    width: 138px;
+    height: 75px;
+}
+.menu input {
+    border-radius: 50px;
+    padding: 6px 18px;
+    font-size: 18px;
+    margin-left: 60px;
+}
+.menu a {
+    text-decoration: none;
+    color:#FFFF;
+    font-size: 26px;
+    margin-left: 60px;    
+}
+body {
+    font-family:'Roboto', sans-serif;
+    
+}
+.head {
+    background-image: url('13.jpg');
+    width: 929px;
+    height: 298px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.head div {
+    width: 518px;
+    padding:40px 0 ;
+    font-size: 36px;
+    background-color: #171717;
+    color:white;
+    text-align: center;
+    text-shadow:1px 1px 8px white ;
+}
+.tile {
+    width: 100%;
+    height: 396px;
+    background-image: url('tile.jpg');
+    background-size: cover;
+}
+.block {
+    margin-top:50px;
+    width: 500px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block img {
+    max-width: 100%;
+    min-width: 50%;
+    height: 100%;
+    
+}
+.block p {
+    color:white;
+    text-align: center;
+    font-size:48px
+
+}
+.b {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #434343;
+}
+.tile2 {
+    width: 100%;
+    height: 396px;
+    background-image: url('tile.jpg');
+    background-size: cover;
+}
+.o_nas {
+    background-color: white;
+    width: 473px;
+    height: 500px;
+    font-size: 24px;
+    padding: 20px;
+
+}
+.forms {
+    background-color: white;
+    width: 451px;
+    height: 400px;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+}
+.forms p {
+    margin-top:50px;
+}
+.forms form {
+    box-sizing: border-box;
+    width: 80%;
+    margin:0 auto;
+    height: 200px;
+}
+.otzyv  {
+    width: 100%;
+    height: 100px;
+    background-color: #171717;
+    color:white;
+    border-radius: 30px;
+    margin:10px 0;
+}
+.submit {
+    box-shadow: inset 0 0 0 #171717;
+    width: 181px;
+    height: 42px;
+    margin: 10px 0;
+    background-color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border:3px dashed  #171717;
+    transition: ease-in 0.3s;
+}
+.submit:hover {
+    border: 3px solid #171717;
+    color:white;
+    box-shadow: inset 181px 0 0 #171717;
+
+}
+.krug {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    background-size: contain;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.krug:nth-child(1) {
+    background-image: url('whatsapp.png');
+}
+.krug:nth-child(2) {
+    background-image: url('telegram.webp');
+}
+.krug:nth-child(3) {
+    background-image: url('instagram.png');
+}
+.social_media {
+    display: flex;
+    justify-content: space-evenly;
+    width:75%;
+    margin: 0 auto;
+}
+.href {
+    padding:20px ;
+    opacity: 0;   
+}
+.vse_ispol {
+    width: 900px;
+    height: 218px;
+    background-color: #201f1f;
+    border-radius:50px;
+    color: white;
+    margin: 0 auto;
+    padding:20px;
+}
+.ispol {
+    width: 343px;
+    height: 62px;
+    background-color: white;
+    color:black;
+    font-size: 36px;
+    border-radius:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spisok_ispol {
+    width: 94%;
+    height:160px ;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:10px;    
+}
+.gruppa {
+    width: 150px;
+    height: 30px;
+}
+.gruppa:hover {
+    text-decoration:underline;
+}
+.box {
+    display: flex;
+    margin:50px auto;
+    justify-content: space-between;
+    width:920px;
+}
+.albums {
+    width: 920px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.album {
+    width:266px ;
+    height:312px ;
+    color:white;
+    text-align: center;
+    border:3px solid #1d1d1d;
+    margin-bottom: 10px;
+}
+.album img {
+    width: 266px;
+    height: 266px;
+}
+.ispol_img img {
+    width:500px ;
+    height: auto;
+} 
+.gruppa a {
+    text-decoration: none;
+    color:white
+}
+.gruppa a:hover {
+    color:grey;
+}
+.menu a:hover {
+    color:grey;
+}
