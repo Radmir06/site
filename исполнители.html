@@ -17,13 +17,20 @@
         <div class="menu"><a href="index.html">Главная</a></div>
         <div class="menu"><a href="исполнители.html">Исполнители</a></div>
         <div class="menu"><a href="щ нас.html">О нас</a></div>
+        <button class="nav" onclick="nav()">≡</button>
         
     </header>
     <main>
+        <div class="menu1">
+            <div class="menu2"><input type="text" placeholder="Поиск"></div>
+            <a href="index.html"><div class="menu2">Главная</div></a>
+            <a href="исполнители.html"><div class="menu2">Исполнители</div></a>
+            <a href="щ нас.html"><div class="menu2">О нас</div></a>
+        </div>
         <div class="container2">
             <div class="vse_ispol">
-                <div class="ispol">Все исполнители</div>
-                <div class="spisok_ispol">
+                <div class="ispol" onclick="OpenIspol()">Все исполнители</div>
+                <div class="spisok_ispol" id="spisok">
                     <div class="gruppa"><a href="#Beatles">The Beatles</a></div>
                     <div class="gruppa"><a href="#Queen">Queen</a></div>
                     <div class="gruppa"><a href="#Metallica">Metallica</a></div>
@@ -33,7 +40,7 @@
 
             </div>
             
-            <button class="box" onclick="open(0)">
+            <div class="box" onclick="OpenMod(0)">
                 <div class="ispol" id="Beatles">The Beatles</div>
                 <div class="ispol_img"><img src="beatles_img.jpg"></div>
             </div>
@@ -48,7 +55,7 @@
                 <div class="album"><img src="The_Beatles_-_With_the_Beatles.jpg" alt="">With The Beatles</div>
                 <div class="album"><img src="TheBeatles68LP.jpg" alt="">The Beatles 68 LP</div>
             </div>
-            <div class="box" onclick="open(1)">
+            <div class="box" onclick="OpenMod(1)">
                 <div class="ispol" id="Queen">Queen</div>
                 <div class="ispol_img"><img src="queen_img.jpg"></div>
             </div>
@@ -69,7 +76,7 @@
                 <div class="album"><img src="Innuendo(14).jpg">Innuendo</div>
                 <div class="album"><img src="Queen_Made_In_Heaven (15).jpg">Made In Heaven</div>
             </div>
-            <div class="box" onclick="open(2)">
+            <div class="box" onclick="OpenMod(2)">
                 <div class="ispol" id="Metallica">Metallica</div>
                 <div class="ispol_img"><img src="metallica_img.jpg"></div>               
             </div>
@@ -88,5 +95,6 @@
         </div>       
     </main>
     <script src="js.js"></script>
+    
 </body>
 </html>

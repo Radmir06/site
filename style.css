@@ -19,7 +19,7 @@ main {
     background-color: #171717;
     flex-wrap:wrap;
     justify-content: space-between;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 .container2 {
     width:80%;
@@ -28,16 +28,23 @@ main {
     background-color: #171717;
     min-height: 100vh;
     flex-direction: column;
+    justify-content: center;
 }
 .menu img { 
     width: 138px;
     height: 75px;
+}
+.nav {
+    display: none;
 }
 .menu input {
     border-radius: 50px;
     padding: 6px 18px;
     font-size: 18px;
     margin-left: 60px;
+}
+.menu1 {
+    display: none;
 }
 .menu a {
     text-decoration: none;
@@ -197,6 +204,7 @@ body {
     color: white;
     margin: 0 auto;
     padding:20px;
+    transition: 0.3s;
 }
 .ispol {
     width: 343px;
@@ -230,13 +238,18 @@ body {
     margin:50px auto;
     justify-content: space-between;
     width:920px;
+    
 }
 .albums {
     width: 920px;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
+    transition: 0.5s;
+    overflow: hidden;
+    max-height: 0px;
+
 }
 .album {
     width:266px ;
@@ -264,3 +277,99 @@ body {
 .menu a:hover {
     color:grey;
 }
+@media (max-width:1300px) {
+    .vse_ispol {
+        width: 450px;
+    }
+    .nav {
+        display:block;
+        font-size: 48px;
+        margin-left:10px;
+        background: none;
+        border:none;
+        color:aliceblue;
+    }
+    .menu1 {
+        width: 100%;
+        overflow: hidden;
+        height: 0px;
+        transition: 0.5s;
+        display: block;
+    }
+    .menu2 {
+        padding: 10px;
+        border: 1px solid #171717 ;
+}
+    .menu1 a {
+        text-decoration: none;
+        color:aliceblue;
+    }
+    .menu2:hover {
+        background-color:#434343;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .menu input {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .head {
+        width: 100%;
+    }
+    .o_nas {
+        width: auto;
+        text-align: left;
+        height:auto ;   
+    }
+    .forms {
+        width: auto;
+        margin: 25px 0;
+    }
+
+}
+@media (max-width:600px){
+    .box {
+        width: 300px;
+        overflow: hidden;
+    }
+    .ispol_img img {
+        width: 300px;
+    }
+    .vse_ispol {
+        width: 300px;
+    }
+    .ispol {
+        width: 300px;
+        height: auto;
+        font-size:24px ;
+    }
+    .container2 {
+        width: 100%;
+    }
+    .block p {
+        font-size:32px;
+    }
+    .block {
+        width: 100%;
+    }
+    .albums {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: auto;
+        border: 2px solid white;
+        max-height: 0px;
+    }   
+
+}   
